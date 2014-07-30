@@ -4,9 +4,23 @@
   <head>
     <title>Jordan Jarvis</title>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    <style media="screen" type="text/css">
+      /* Chrome, Safari, Opera */
+      @-webkit-keyframes changecolour {
+      from {-webkit-filter: hue-rotate(200deg);}
+      to {-webkit-filter: hue-rotate(560deg);}
+      }
+
+      /* Standard syntax */
+      @keyframes changecolour {
+      from {-webkit-filter: hue-rotate(0deg);}
+      to {-webkit-filter: hue-rotate(360deg);}
+      }
+    </style>
   </head>
   <body style = "overflow:hidden;">
-    <image src = "images/logotransparent.png" style = "position:absolute;top:50%;left:50%;margin-left:-250px;margin-top:-250px;z-index:1"/>
+    <image src = "images/logotransparent.png" style = "position:absolute;top:50%;left:50%;margin-left:-250px;margin-top:-250px;z-index:1;-webkit-animation: changecolour 7.75s;-webkit-animation-iteration-count: infinite;-webkit-animation-delay: 0s;-webkit-animation-timing-function: linear;animation: changecolour 7.75s;"/>
     <div style = "position:absolute;height:50%;width:110%;background-color:#f4f4f4;left:-5%;top:50%;"></div>
   </body>
 </html>
